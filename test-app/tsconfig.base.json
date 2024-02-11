@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@test-app/api-interfaces": ["lib/api-interfaces/src/index.ts"],
-      "@test-app/core-data": ["lib/core-data/src/index.ts"]
+      "@test-app/core-data": ["lib/core-data/src/index.ts"],
+      "@test-app/material": ["lib/material/src/index.ts"],
+      "@test-app/ui-login": ["lib/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,1 +1,21 @@
-<p>home works!</p>
+<mat-card class="">
+    <mat-card-header>
+        <mat-card-title>
+            {{courseTitle}}
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content #cardContent>
+      <mat-list>
+        <mat-list-item *ngFor="let lesson of courseLessons"
+        (click)="selectLesson({lesson : lesson})">
+          <h3 matLine>{{lesson.title}}</h3>
+        </mat-list-item>
+      </mat-list>
+      <hr>
+      <span *ngIf="currentLesson; else prompt">
+        <pre>{{currentLesson | json}}</pre>
+      </span>
+      <ng-template #prompt>Select a lesson</ng-template>
+      <button mat-button color="primary" (click)="resetLesson()">Reset</button>
+    </mat-card-content>
+</mat-card>

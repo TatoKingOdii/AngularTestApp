@@ -1,1 +1,72 @@
-<p>courses works!</p>
+<div class="courses-containers">
+  <div class="courses-list">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          Potato List
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content *ngFor="let course of courses">
+          <mat-action-list>
+            <div class="flex-box">
+            <button mat-list-item class="course-item" (click)="selectCourse(course)">
+                <h4 matLine>{{course.title}}</h4>
+                <p matLine>
+                  {{course.description}}
+                </p>
+            </button>
+            <button mat-button color="warn" class="course-item"
+                    (click)="deleteCourse(course); $event.stopImmediatePropagation()">
+              <mat-icon>delete</mat-icon>
+            </button>
+            </div>
+          </mat-action-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="course-details">
+    <mat-card>
+      <mat-card-header>
+        <span *ngIf="currentCourse.title; else prompt">
+          <mat-card-title>
+            {{currentCourse.title}}
+          </mat-card-title>
+        </span>
+        <ng-template #prompt>
+          <mat-card-title>
+            Select a Potato
+          </mat-card-title>
+        </ng-template>
+      </mat-card-header>
+      <form #form="ngForm" (ngSubmit)="saveCourse(currentCourse)">
+        <mat-card-content>
+          <mat-form-field>
+            <input matInput name="title" required
+                   [(ngModel)]="currentCourse.title" placeholder="Title"/>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput name="description" required
+                   [(ngModel)]="currentCourse.description" placeholder="Description"/>
+          </mat-form-field>
+          <section>
+            <h4>{{currentCourse.percentageComplete}}% Complete</h4>
+            <mat-slider name="percentageComplete" class="full-with"
+                        min="0" max="100" discrete="true">
+              <input matSliderThumb name="percentageComplete"  [(ngModel)]="currentCourse.percentageComplete"/>
+            </mat-slider>
+          </section>
+          <section>
+            <mat-checkbox name="favorite" [(ngModel)]="currentCourse.favorite">Favorite</mat-checkbox>
+          </section>
+        </mat-card-content>
+        <mat-card-actions>
+          <button type="submit" [disabled]="form.invalid" mat-button color="accent">Save</button>
+          <button type="button" mat-button (click)="cancel()">Cancel</button>
+        </mat-card-actions>
+      </form>
+      <pre>{{form.value | json}}</pre>
+      <pre>{{form.valid}}</pre>
+      <router-outlet/>
+    </mat-card>
+  </div>
+</div>

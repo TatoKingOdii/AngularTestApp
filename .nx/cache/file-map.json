@@ -1,0 +1,419 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {},
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "material": [
+        {
+          "file": "test-app/libs/material/.eslintrc.json",
+          "hash": "8562369218367744661"
+        },
+        {
+          "file": "test-app/libs/material/README.md",
+          "hash": "14183067360830868536"
+        },
+        {
+          "file": "test-app/libs/material/jest.config.ts",
+          "hash": "6374352221952180066"
+        },
+        {
+          "file": "test-app/libs/material/project.json",
+          "hash": "9932354049164485773"
+        },
+        {
+          "file": "test-app/libs/material/src/index.ts",
+          "hash": "10281677923197341528"
+        },
+        {
+          "file": "test-app/libs/material/src/lib/material/material.module.ts",
+          "hash": "12355267048854537649"
+        },
+        {
+          "file": "test-app/libs/material/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "test-app/libs/material/tsconfig.json",
+          "hash": "15487755565970508470"
+        },
+        {
+          "file": "test-app/libs/material/tsconfig.lib.json",
+          "hash": "5796668385415907511"
+        },
+        {
+          "file": "test-app/libs/material/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "academy-e2e": [
+        {
+          "file": "test-app/apps/academy-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/cypress.config.ts",
+          "hash": "12586416982398116375"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/project.json",
+          "hash": "3377880292301217494"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/src/e2e/app.cy.ts",
+          "hash": "5913392317181763463"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "test-app/apps/academy-e2e/tsconfig.json",
+          "hash": "4332380883180617610"
+        }
+      ],
+      "api-interfaces": [
+        {
+          "file": "test-app/libs/api-interfaces/.eslintrc.json",
+          "hash": "8562369218367744661"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/README.md",
+          "hash": "3162071937453905454"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/jest.config.ts",
+          "hash": "8267734216495676752"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/project.json",
+          "hash": "8400950788782173015"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/index.ts",
+          "hash": "11116874661654928054"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/lib/api-interfaces/api-interfaces.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/lib/api-interfaces/api-interfaces.component.html",
+          "hash": "294541705184886545"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/lib/api-interfaces/api-interfaces.component.spec.ts",
+          "hash": "15093937921817873703"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/lib/api-interfaces/api-interfaces.component.ts",
+          "hash": "6962680868708909532"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/tsconfig.json",
+          "hash": "17851648935867555817"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/tsconfig.lib.json",
+          "hash": "5796668385415907511"
+        },
+        {
+          "file": "test-app/libs/api-interfaces/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "academy": [
+        {
+          "file": "test-app/apps/academy/.eslintrc.json",
+          "hash": "8562369218367744661"
+        },
+        {
+          "file": "test-app/apps/academy/jest.config.ts",
+          "hash": "6233707068408138358"
+        },
+        {
+          "file": "test-app/apps/academy/project.json",
+          "hash": "3765252527240764721"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.component.html",
+          "hash": "17816966185630879015"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.component.spec.ts",
+          "hash": "13172392760539353599"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.component.ts",
+          "hash": "5045810593451517734"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.config.ts",
+          "hash": "9588915743478010319"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/app.routes.ts",
+          "hash": "17449241460760413028"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses-list/courses-list.component.html",
+          "hash": "6639340926960137347"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses-list/courses-list.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses-list/courses-list.component.spec.ts",
+          "hash": "15512107579092563504"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses-list/courses-list.component.ts",
+          "hash": "12174192308051608943"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses.component.html",
+          "hash": "2350549820517810095"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses.component.spec.ts",
+          "hash": "2990957241190969739"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/courses/courses.component.ts",
+          "hash": "12285530328199622807"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/home/home.component.html",
+          "hash": "3103967125976734535"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/home/home.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/home/home.component.spec.ts",
+          "hash": "2620641819347346630"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/home/home.component.ts",
+          "hash": "9329982356281333288"
+        },
+        {
+          "file": "test-app/apps/academy/src/app/nx-welcome.component.ts",
+          "hash": "235794876936271710"
+        },
+        {
+          "file": "test-app/apps/academy/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/apps/academy/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "test-app/apps/academy/src/index.html",
+          "hash": "13180518606344641506"
+        },
+        {
+          "file": "test-app/apps/academy/src/main.ts",
+          "hash": "16635586463787978962"
+        },
+        {
+          "file": "test-app/apps/academy/src/styles.scss",
+          "hash": "9525514396149276363"
+        },
+        {
+          "file": "test-app/apps/academy/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "test-app/apps/academy/tsconfig.app.json",
+          "hash": "8365644956319658761"
+        },
+        {
+          "file": "test-app/apps/academy/tsconfig.editor.json",
+          "hash": "17511610827034788226"
+        },
+        {
+          "file": "test-app/apps/academy/tsconfig.json",
+          "hash": "11271817794535700763"
+        },
+        {
+          "file": "test-app/apps/academy/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ],
+      "core-data": [
+        {
+          "file": "test-app/libs/core-data/.eslintrc.json",
+          "hash": "8562369218367744661"
+        },
+        {
+          "file": "test-app/libs/core-data/README.md",
+          "hash": "7976350817783915979"
+        },
+        {
+          "file": "test-app/libs/core-data/jest.config.ts",
+          "hash": "14469642448765505568"
+        },
+        {
+          "file": "test-app/libs/core-data/project.json",
+          "hash": "1562271351468559843"
+        },
+        {
+          "file": "test-app/libs/core-data/src/index.ts",
+          "hash": "10571252754642467896"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/core-data/core-data.component.html",
+          "hash": "17497837621929253836"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/core-data/core-data.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/core-data/core-data.component.spec.ts",
+          "hash": "264962140662016543"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/core-data/core-data.component.ts",
+          "hash": "9888053401804645604"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/services/auth/auth.service.spec.ts",
+          "hash": "10697900076114607965"
+        },
+        {
+          "file": "test-app/libs/core-data/src/lib/services/auth/auth.service.ts",
+          "hash": "1617151162163680102"
+        },
+        {
+          "file": "test-app/libs/core-data/src/test-setup.ts",
+          "hash": "12935735732682149507"
+        },
+        {
+          "file": "test-app/libs/core-data/tsconfig.json",
+          "hash": "15487755565970508470"
+        },
+        {
+          "file": "test-app/libs/core-data/tsconfig.lib.json",
+          "hash": "5796668385415907511"
+        },
+        {
+          "file": "test-app/libs/core-data/tsconfig.spec.json",
+          "hash": "2927375835638640771"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".idea/.gitignore",
+        "hash": "10286036308014790964"
+      },
+      {
+        "file": ".idea/AngularTestApp.iml",
+        "hash": "7210100432694438571"
+      },
+      {
+        "file": ".idea/inspectionProfiles/Project_Default.xml",
+        "hash": "8912173605315939135"
+      },
+      {
+        "file": ".idea/misc.xml",
+        "hash": "14083443867365438903"
+      },
+      {
+        "file": ".idea/modules.xml",
+        "hash": "16537607748158864193"
+      },
+      {
+        "file": ".idea/vcs.xml",
+        "hash": "14600148892634157659"
+      },
+      {
+        "file": "test-app/.editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "test-app/.eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": "test-app/.eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": "test-app/.gitignore",
+        "hash": "8491837053101957257"
+      },
+      {
+        "file": "test-app/.prettierignore",
+        "hash": "3395189204293871444"
+      },
+      {
+        "file": "test-app/.prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": "test-app/.vscode/extensions.json",
+        "hash": "235626400633494639"
+      },
+      {
+        "file": "test-app/README.md",
+        "hash": "8348499023215729735"
+      },
+      {
+        "file": "test-app/jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "test-app/jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "test-app/nx.json",
+        "hash": "13532100572866254710"
+      },
+      {
+        "file": "test-app/package-lock.json",
+        "hash": "18262599788969754303"
+      },
+      {
+        "file": "test-app/package.json",
+        "hash": "13072553292763553473"
+      },
+      {
+        "file": "test-app/tsconfig.base.json",
+        "hash": "12590249352272770744"
+      }
+    ]
+  }
+}
