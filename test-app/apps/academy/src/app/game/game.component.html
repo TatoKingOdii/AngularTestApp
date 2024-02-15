@@ -1,0 +1,13 @@
+<div class="card-container">
+  <mat-card class="background full-with" [style.background-position-y]="backgroundPosition + 'px'">
+    <div #spaceship class="spaceship"
+         [style.left]="shipPosition.x + 'px'"
+         [style.top]="shipPosition.y + 'px'">
+    </div>
+    <div class="shot" *ngFor="let shot of shots"
+              [style.left]="shot.x + 'px'"
+              [style.top]="shot.y + 'px'">
+
+    </div>
+  </mat-card>
+</div>

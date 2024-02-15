@@ -4,9 +4,17 @@ import { CoursesComponent } from './courses/courses.component';
 import {CourseComponent} from "./courses/course/course.component";
 import {CourseLessonComponent} from "./courses/course-lessons/course-lesson.component";
 import {authGuard} from "../../../../lib/core-data/src/lib/guards/auth.guard";
+import {InverseTextComponent} from "./inverse-text/InverseText.component";
+import {ScoreboardComponent} from "./scoreboard/scoreboard.component";
+import {SlideshowComponent} from "./slideshow/slideshow.component";
+import {GameComponent} from "./game/game.component";
 
 export const appRoutes: Route[] = [
   {path: 'home', component: HomeComponent},
+  {path: 'invText', component: InverseTextComponent},
+  {path: 'scoreboard', component: ScoreboardComponent},
+  {path: 'slideshow', component: SlideshowComponent},
+  {path: 'game', component: GameComponent},
   {path: 'lessons', loadChildren: () => import('./lessons/lessons.routes').then(mod => mod.lessonsRoutes)},
   {path: 'admin', component: HomeComponent, canActivate: [authGuard]},
   {path: 'courses', component: CoursesComponent,

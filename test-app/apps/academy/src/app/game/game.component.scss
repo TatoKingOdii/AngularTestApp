@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: fixed;
+  top: 70px;
+  bottom: 0;
+  width: 75%;
+}
+
+.shot {
+  background: yellow;
+  z-index: 0;
+  width: 12px;
+  height: 25px;
+  position: absolute;
+}
+
+.background {
+  margin: 16px;
+  background-size: cover;
+  overflow: hidden;
+  background: white url("/assets/background.png")  repeat-y 0 0;
+}
+
+.spaceship {
+  background: white url('/assets/5994610.png');
+  width: 350px;
+  height: 350px;
+  position: absolute;
+}

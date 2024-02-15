@@ -39,7 +39,7 @@ export class CoursesService {
   }
 
   delete(course: Course) {
-    return this.http.get<Course>(ENDPOINT_BASE + EndpointPaths.get(Endpoint.COURSES) + '/' + course.id)
+    return this.http.delete<Course>(ENDPOINT_BASE + EndpointPaths.get(Endpoint.COURSES) + '/' + course.id)
       .pipe(catchError(error => this.handleError(error)));
   }
 

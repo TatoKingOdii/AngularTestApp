@@ -22,7 +22,13 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/academy/src/favicon.ico",
-          "apps/academy/src/assets"
+          "apps/academy/src/assets",
+          {
+            "input": "./test-app/apps/academy/assets",
+            "glob": "**/*.!(ts)",
+            "output": "./src"
+
+          }
         ],
         "styles": [
           "@angular/material/prebuilt-themes/indigo-pink.css",

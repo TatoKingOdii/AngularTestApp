@@ -20,7 +20,11 @@ export class AppComponent implements OnInit {
   pages = [
     {title: 'Home', location: '/home', icon: 'home'},
     {title: 'Courses',location: '/courses', icon: 'list'},
-    {title: 'Lessons',location: '/lessons', icon: 'list'}
+    {title: 'Lessons',location: '/lessons', icon: 'list'},
+    {title: 'Inverse Text', location: '/invText', icon: 'V'},
+    {title: 'Scoreboard', location: '/scoreboard', icon: 'scoreboard'},
+    {title: 'Slideshow', location: '/slideshow', icon: 'photo'},
+    {title: 'Game', location: '/game', icon: 'game'}
   ];
 
   constructor(private router: Router) {
