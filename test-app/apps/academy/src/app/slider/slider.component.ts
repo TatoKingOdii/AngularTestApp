@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatCard} from "@angular/material/card";
 import {FormBuilder, FormGroup, ReactiveFormsModule} from "@angular/forms";
-import {filter, map, Observable, pairwise, startWith, tap} from "rxjs";
+import {filter, map, Observable, pairwise, startWith, Subscription, tap} from "rxjs";
 import {SalesNumberService} from "./sales-service/sales-number.service";
 import {SalesWidgetComponent} from "./sales-widget/sales-widget.component";
 
@@ -19,7 +19,7 @@ export interface Range {
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.scss',
 })
-export class SliderComponent implements OnInit{
+export class SliderComponent implements OnInit, OnDestroy {
   daForm!: FormGroup;
   minValue$!: Observable<number>;
   maxValue$!: Observable<number>;
@@ -28,6 +28,7 @@ export class SliderComponent implements OnInit{
   startMin: number = 45;
   startMax: number = 60;
   step: number = 1;
+  subscriptions = new Subscription();
 
   constructor(private fb: FormBuilder, private sales: SalesNumberService) {
   }
@@ -44,9 +45,10 @@ export class SliderComponent implements OnInit{
       tap(val => console.log('StartStream: ' + JSON.stringify(val))),
       map((value: {min: string, max: string} ) => this.parseRange(value)),
       pairwise(),
-      //tap(([oldVal, newVal]) => console.log('Old: ' + JSON.stringify(oldVal) + '  New: ' + JSON.stringify(newVal))),
       filter(([oldVal, newVal]) => this.filterMinMaxVals(oldVal, newVal)),
+      tap(([oldVal, newVal]) => console.log('Old: ' + JSON.stringify(oldVal) + '  New: ' + JSON.stringify(newVal))),
       map(([oldVal, newVal]) => this.getBoundsAdjustedVal(oldVal, newVal)),
+      tap(value => this.updateSliders(value)),
       tap(newVal => this.sales.updateRange(newVal)),
       tap(val => console.log('ValueStream: ' + JSON.stringify(val)))
     );
@@ -60,6 +62,12 @@ export class SliderComponent implements OnInit{
       map(vals => vals.max),
       startWith(this.startMax)
     );
+
+    this.subscriptions.add(() => this.daForm.valueChanges.subscribe());
+  }
+
+  ngOnDestroy() {
+    this.subscriptions.unsubscribe();
   }
 
   private parseRange(value: {min: string, max: string}): Range {
@@ -87,5 +95,9 @@ export class SliderComponent implements OnInit{
     }
 
     return newVal;
+  }
+
+  private updateSliders(value: Range) {
+    this.daForm.setValue(value, {emitEvent: false});
   }
 }
