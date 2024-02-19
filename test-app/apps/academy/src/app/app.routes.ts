@@ -8,6 +8,11 @@ import {InverseTextComponent} from "./inverse-text/InverseText.component";
 import {ScoreboardComponent} from "./scoreboard/scoreboard.component";
 import {SlideshowComponent} from "./slideshow/slideshow.component";
 import {GameComponent} from "./game/game.component";
+import {MapComponent} from "./map/map.component";
+import {AnnotateComponent} from "./annotate/annotate.component";
+import {LocationComponent} from "./location/location.component";
+import {SliderComponent} from "./slider/slider.component";
+import {EventComponent} from "./event/event.component";
 
 export const appRoutes: Route[] = [
   {path: 'home', component: HomeComponent},
@@ -15,6 +20,11 @@ export const appRoutes: Route[] = [
   {path: 'scoreboard', component: ScoreboardComponent},
   {path: 'slideshow', component: SlideshowComponent},
   {path: 'game', component: GameComponent},
+  {path: 'map', component: MapComponent},
+  {path: 'annotate', component: AnnotateComponent},
+  {path: 'location', component: LocationComponent},
+  {path: 'slider', component: SliderComponent},
+  {path: 'event', component: EventComponent},
   {path: 'lessons', loadChildren: () => import('./lessons/lessons.routes').then(mod => mod.lessonsRoutes)},
   {path: 'admin', component: HomeComponent, canActivate: [authGuard]},
   {path: 'courses', component: CoursesComponent,

@@ -1,0 +1,6 @@
+<mat-form-field class="search">
+  <input matInput name="search" type="search" [formControl]="searchControl" placeholder="Notification Msg"/>
+</mat-form-field>
+<button mat-raised-button color="accent" (click)="notify(searchControl.value)">
+  Notify
+</button>

@@ -1,0 +1,22 @@
+.pin {
+  background: transparent url('/assets/5994610.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  pointer-events: none;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: fixed;
+  top: 64px;
+  bottom: 0;
+  width: 75%;
+}
+
+.background {
+  background-size: cover;
+  overflow: hidden;
+  background: white url("/assets/background.png")  repeat-y 0 0;
+}

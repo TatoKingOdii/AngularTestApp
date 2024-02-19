@@ -1,0 +1,12 @@
+<div class="card-container">
+  <mat-card>
+    <h2>Stuff</h2>
+    <form [formGroup]="daForm">
+      <input type="range" formControlName="min" [value]="minValue$ |  async" [min]="min" [max]="max" [step]="step"/>
+      <p>Buy At: {{minValue$ | async | currency }}</p>
+      <input type="range" formControlName="max" [value]="maxValue$ | async" [min]="min" [max]="max" [step]="step"/>
+      <p>Sell At: {{maxValue$ | async | currency }}</p>
+    </form>
+  </mat-card>
+  <test-app-sales-widget></test-app-sales-widget>
+</div>
